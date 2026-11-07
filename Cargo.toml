@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+rust-version = "1.85"
+
+[workspace.dependencies]
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+half = "2"
+memmap2 = "0.9"
+safetensors = "0.6"
+tokenizers = { version = "0.22", default-features = false, features = ["onig"] }
+bytemuck = { version = "1", features = ["derive"] }
+objc2 = "0.6"
+objc2-foundation = "0.3"
+objc2-metal = "0.3"
+minijinja-contrib = { version = "2", features = ["pycompat"] }
+minijinja = { version = "2", features = ["builtins", "json"] }
+fancy-regex = "0.16"
+clap = { version = "4", features = ["derive"] }
+model-format = { path = "crates/model-format" }
+tensor-core = { path = "crates/tensor-core" }
+metal-backend = { path = "crates/metal-backend" }
+model-runtime = { path = "crates/model-runtime" }
+llama-rs = { path = "crates/llama-rs" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

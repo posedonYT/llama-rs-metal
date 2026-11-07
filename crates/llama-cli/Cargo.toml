@@ -1,0 +1,13 @@
+[package]
+name = "llama-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+clap.workspace = true
+serde_json.workspace = true
+llama-rs.workspace = true
+model-format.workspace = true
+metal-backend.workspace = true

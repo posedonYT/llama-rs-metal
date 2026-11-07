@@ -1,0 +1,18 @@
+[package]
+name = "metal-backend"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+model-format.workspace = true
+tensor-core.workspace = true
+bytemuck.workspace = true
+memmap2.workspace = true
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2.workspace = true
+objc2-foundation.workspace = true
+objc2-metal.workspace = true

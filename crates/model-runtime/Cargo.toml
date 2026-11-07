@@ -1,0 +1,13 @@
+[package]
+name = "model-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
+model-format.workspace = true
+tensor-core.workspace = true
+metal-backend.workspace = true

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "qwen35-08-4bit",
+      "path": "models/mlx/Qwen3.5-0.8B-4bit",
+      "repo": "mlx-community/Qwen3.5-0.8B-4bit",
+      "revision": "da28692b5f139cb0ec58a356b437486b7dac7462"
+    },
+    {
+      "id": "qwen35-08-8bit",
+      "path": "models/mlx/Qwen3.5-0.8B-8bit",
+      "repo": "mlx-community/Qwen3.5-0.8B-8bit",
+      "revision": "87e768fbfa03994095f3d14527c80c5ae70c5758"
+    },
+    {
+      "id": "qwen35-08-bf16",
+      "path": "models/mlx/Qwen3.5-0.8B-bf16",
+      "repo": "mlx-community/Qwen3.5-0.8B-bf16",
+      "revision": "3067585164dbcc505eec73d554349de6a27571a4"
+    },
+    {
+      "id": "llama32-1b-4bit",
+      "path": "models/mlx/Llama-3.2-1B-Instruct-4bit",
+      "repo": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+      "revision": "08231374eeacb049a0eade7922910865b8fce912"
+    },
+    {
+      "repo": "mlx-community/Qwen3.5-4B-4bit",
+      "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+      "path": "models/mlx/Qwen3.5-4B-4bit",
+      "id": "qwen35-4b-4bit"
+    }
+  ]
+}

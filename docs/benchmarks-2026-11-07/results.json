@@ -1,0 +1,3489 @@
+{
+  "schema_version": 2,
+  "ratio_definition": "Rust/reference throughput; >1 favors Rust; confounded blocks excluded from paired ratio",
+  "results": [
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p128-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1756.7632173049333,
+              "p95": 1832.486886676797
+            },
+            "rust": {
+              "samples": 8,
+              "median": 518.0943884768008,
+              "p95": 533.1466678096716
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1756.7632173049333,
+              "p95": 1832.486886676797
+            },
+            "rust": {
+              "samples": 8,
+              "median": 518.0943884768008,
+              "p95": 533.1466678096716
+            }
+          },
+          "rust_speed_ratio": 0.31233183509845447,
+          "paired_bootstrap95": [
+            0.29083233303982836,
+            0.3559382790345858
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 123.6490074858095,
+              "p95": 130.84532656696635
+            },
+            "rust": {
+              "samples": 8,
+              "median": 82.48265526635977,
+              "p95": 84.47654721116878
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 123.6490074858095,
+              "p95": 130.84532656696635
+            },
+            "rust": {
+              "samples": 8,
+              "median": 82.48265526635977,
+              "p95": 84.47654721116878
+            }
+          },
+          "rust_speed_ratio": 0.7368219044166163,
+          "paired_bootstrap95": [
+            0.6361205316598987,
+            0.9477148835811878
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0746943544363603,
+              "p95": 0.10053700576536358
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.2482868755,
+              "p95": 0.25600322355
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0746943544363603,
+              "p95": 0.10053700576536358
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.2482868755,
+              "p95": 0.25600322355
+            }
+          },
+          "rust_speed_ratio": 0.3195610904561938,
+          "paired_bootstrap95": [
+            0.29664799921406815,
+            0.3658322021510398
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018712079618126154,
+              "p95": 0.003974558354821054
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001202833,
+              "p95": 0.0012950876
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018712079618126154,
+              "p95": 0.003974558354821054
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001202833,
+              "p95": 0.0012950876
+            }
+          },
+          "rust_speed_ratio": 1.7739977485570337,
+          "paired_bootstrap95": [
+            1.463085775383621,
+            2.44932197607415
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2005.7803585352365,
+              "p95": 2066.3823469082035
+            },
+            "rust": {
+              "samples": 8,
+              "median": 478.5867187131972,
+              "p95": 500.0316299826932
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2005.7803585352365,
+              "p95": 2066.3823469082035
+            },
+            "rust": {
+              "samples": 8,
+              "median": 478.5867187131972,
+              "p95": 500.0316299826932
+            }
+          },
+          "rust_speed_ratio": 0.23928036133919986,
+          "paired_bootstrap95": [
+            0.2301234448016091,
+            0.245713766001412
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 119.22714500007979,
+              "p95": 129.97962399222524
+            },
+            "rust": {
+              "samples": 8,
+              "median": 75.57330129991277,
+              "p95": 79.94146376901766
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 119.22714500007979,
+              "p95": 129.97962399222524
+            },
+            "rust": {
+              "samples": 8,
+              "median": 75.57330129991277,
+              "p95": 79.94146376901766
+            }
+          },
+          "rust_speed_ratio": 0.6472165375693356,
+          "paired_bootstrap95": [
+            0.5882820480502741,
+            0.7284118901422507
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.25710062484722584,
+              "p95": 0.286379127332475
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.0718465419999998,
+              "p95": 1.188882501
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.25710062484722584,
+              "p95": 0.286379127332475
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.0718465419999998,
+              "p95": 1.188882501
+            }
+          },
+          "rust_speed_ratio": 0.2410077495384224,
+          "paired_bootstrap95": [
+            0.23114523146741475,
+            0.24846515613299525
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018111665267497301,
+              "p95": 0.002858160284813493
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012884375,
+              "p95": 0.0014425606499999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018111665267497301,
+              "p95": 0.002858160284813493
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012884375,
+              "p95": 0.0014425606499999999
+            }
+          },
+          "rust_speed_ratio": 1.555266419796619,
+          "paired_bootstrap95": [
+            1.312360597678461,
+            1.8665924140398455
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p2048-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1853.9136988628006,
+              "p95": 1932.6108599952636
+            },
+            "rust": {
+              "samples": 8,
+              "median": 366.83152504893224,
+              "p95": 383.81075148066765
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1853.9136988628006,
+              "p95": 1932.6108599952636
+            },
+            "rust": {
+              "samples": 8,
+              "median": 366.83152504893224,
+              "p95": 383.81075148066765
+            }
+          },
+          "rust_speed_ratio": 0.19935914518493875,
+          "paired_bootstrap95": [
+            0.1967071163832057,
+            0.20204692895524912
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 117.76085253305882,
+              "p95": 123.33397480150676
+            },
+            "rust": {
+              "samples": 8,
+              "median": 72.58844965689869,
+              "p95": 76.00361353823875
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 117.76085253305882,
+              "p95": 123.33397480150676
+            },
+            "rust": {
+              "samples": 8,
+              "median": 72.58844965689869,
+              "p95": 76.00361353823875
+            }
+          },
+          "rust_speed_ratio": 0.6461283562677123,
+          "paired_bootstrap95": [
+            0.6090608912421884,
+            0.7051557586684037
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.1065746253589168,
+              "p95": 1.1466834604623728
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.584635875,
+              "p95": 5.662719897800001
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.1065746253589168,
+              "p95": 1.1466834604623728
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.584635875,
+              "p95": 5.662719897800001
+            }
+          },
+          "rust_speed_ratio": 0.19972582461393804,
+          "paired_bootstrap95": [
+            0.19698619760116667,
+            0.2025035535661372
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018533545080572367,
+              "p95": 0.0037074812338687467
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0013188330000000002,
+              "p95": 0.0018775726999999997
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018533545080572367,
+              "p95": 0.0037074812338687467
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0013188330000000002,
+              "p95": 0.0018775726999999997
+            }
+          },
+          "rust_speed_ratio": 1.5434824957132085,
+          "paired_bootstrap95": [
+            1.132312948545886,
+            2.2540289943074683
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "native",
+      "workload": "prose-p128-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1947.7943301835362,
+              "p95": 1969.0499774885325
+            },
+            "rust": {
+              "samples": 8,
+              "median": 460.917765505975,
+              "p95": 495.64966035478926
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1947.7943301835362,
+              "p95": 1969.0499774885325
+            },
+            "rust": {
+              "samples": 8,
+              "median": 460.917765505975,
+              "p95": 495.64966035478926
+            }
+          },
+          "rust_speed_ratio": 0.24348247511964158,
+          "paired_bootstrap95": [
+            0.23658758418676526,
+            0.2550475836763333
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 123.90591367999306,
+              "p95": 127.725481562651
+            },
+            "rust": {
+              "samples": 8,
+              "median": 73.35197266280308,
+              "p95": 77.34420476668032
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 123.90591367999306,
+              "p95": 127.725481562651
+            },
+            "rust": {
+              "samples": 8,
+              "median": 73.35197266280308,
+              "p95": 77.34420476668032
+            }
+          },
+          "rust_speed_ratio": 0.5998339529002442,
+          "paired_bootstrap95": [
+            0.5892237825154327,
+            0.6188621912734265
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.06715539563447237,
+              "p95": 0.07430052083218469
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.2790995205,
+              "p95": 0.28956814155
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.06715539563447237,
+              "p95": 0.07430052083218469
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.2790995205,
+              "p95": 0.28956814155
+            }
+          },
+          "rust_speed_ratio": 0.24709852955149414,
+          "paired_bootstrap95": [
+            0.24009338934942623,
+            0.2588024518772255
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001223729457706213,
+              "p95": 0.0016111937700770795
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012956040000000001,
+              "p95": 0.0014142271000000001
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001223729457706213,
+              "p95": 0.0016111937700770795
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012956040000000001,
+              "p95": 0.0014142271000000001
+            }
+          },
+          "rust_speed_ratio": 1.0208008770557457,
+          "paired_bootstrap95": [
+            0.9603252365072182,
+            1.0709798367471948
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "native",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2279.4018065967543,
+              "p95": 2310.6891909600795
+            },
+            "rust": {
+              "samples": 8,
+              "median": 424.49855667645,
+              "p95": 447.5559175158319
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2279.4018065967543,
+              "p95": 2310.6891909600795
+            },
+            "rust": {
+              "samples": 8,
+              "median": 424.49855667645,
+              "p95": 447.5559175158319
+            }
+          },
+          "rust_speed_ratio": 0.19435726967009762,
+          "paired_bootstrap95": [
+            0.18719903360318418,
+            0.20178922693419554
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 122.79767221105016,
+              "p95": 125.8407349323462
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.4215424684006,
+              "p95": 72.97454666209646
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 122.79767221105016,
+              "p95": 125.8407349323462
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.4215424684006,
+              "p95": 72.97454666209646
+            }
+          },
+          "rust_speed_ratio": 0.5638169761234307,
+          "paired_bootstrap95": [
+            0.5464212737972047,
+            0.5791516026061173
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.22584645845927298,
+              "p95": 0.2683818786870688
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.2074133539999998,
+              "p95": 1.2718853483500001
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.22584645845927298,
+              "p95": 0.2683818786870688
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.2074133539999998,
+              "p95": 1.2718853483500001
+            }
+          },
+          "rust_speed_ratio": 0.19573065876098988,
+          "paired_bootstrap95": [
+            0.1879850371962405,
+            0.20379542622330174
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0012415834935382009,
+              "p95": 0.001993149588815867
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012214585,
+              "p95": 0.0015028205
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0012415834935382009,
+              "p95": 0.001993149588815867
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012214585,
+              "p95": 0.0015028205
+            }
+          },
+          "rust_speed_ratio": 1.0718044812002014,
+          "paired_bootstrap95": [
+            0.9911889700193633,
+            1.2120791779911928
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "native",
+      "workload": "prose-p2048-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2255.581639101113,
+              "p95": 2291.2879027097088
+            },
+            "rust": {
+              "samples": 8,
+              "median": 331.8107803287642,
+              "p95": 338.70136821503087
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2255.581639101113,
+              "p95": 2291.2879027097088
+            },
+            "rust": {
+              "samples": 8,
+              "median": 331.8107803287642,
+              "p95": 338.70136821503087
+            }
+          },
+          "rust_speed_ratio": 0.151991378052556,
+          "paired_bootstrap95": [
+            0.14403849667903418,
+            0.15918580248082756
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 120.59208007643747,
+              "p95": 122.35871319525211
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.70411275440065,
+              "p95": 69.82435692023935
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 120.59208007643747,
+              "p95": 122.35871319525211
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.70411275440065,
+              "p95": 69.82435692023935
+            }
+          },
+          "rust_speed_ratio": 0.5639064764215099,
+          "paired_bootstrap95": [
+            0.5390369946908374,
+            0.5978160498429912
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.9092046666191891,
+              "p95": 1.0956966021913104
+            },
+            "rust": {
+              "samples": 8,
+              "median": 6.1734753545,
+              "p95": 6.61182483355
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.9092046666191891,
+              "p95": 1.0956966021913104
+            },
+            "rust": {
+              "samples": 8,
+              "median": 6.1734753545,
+              "p95": 6.61182483355
+            }
+          },
+          "rust_speed_ratio": 0.1527763198760127,
+          "paired_bootstrap95": [
+            0.14398688701667506,
+            0.16118389290214563
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0012444580206647515,
+              "p95": 0.0015569891547784207
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001355625,
+              "p95": 0.0017219999999999998
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0012444580206647515,
+              "p95": 0.0015569891547784207
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001355625,
+              "p95": 0.0017219999999999998
+            }
+          },
+          "rust_speed_ratio": 0.9300896480186887,
+          "paired_bootstrap95": [
+            0.8334032417811534,
+            1.0585565466514735
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p128-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1193.252356558547,
+              "p95": 1331.978871779998
+            },
+            "rust": {
+              "samples": 8,
+              "median": 330.97496256750856,
+              "p95": 353.5920194479003
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1193.252356558547,
+              "p95": 1331.978871779998
+            },
+            "rust": {
+              "samples": 8,
+              "median": 330.97496256750856,
+              "p95": 353.5920194479003
+            }
+          },
+          "rust_speed_ratio": 0.2840212028044667,
+          "paired_bootstrap95": [
+            0.2568431273859536,
+            0.3140751495416794
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 96.85561223810862,
+              "p95": 109.99581256769578
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.78428331577302,
+              "p95": 74.13444505933138
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 96.85561223810862,
+              "p95": 109.99581256769578
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.78428331577302,
+              "p95": 74.13444505933138
+            }
+          },
+          "rust_speed_ratio": 0.7253308543996814,
+          "paired_bootstrap95": [
+            0.6297553925201449,
+            0.8352441919065895
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.11093866592273116,
+              "p95": 0.13234688970260322
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.389705604,
+              "p95": 0.40504943805
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.11093866592273116,
+              "p95": 0.13234688970260322
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.389705604,
+              "p95": 0.40504943805
+            }
+          },
+          "rust_speed_ratio": 0.2914572980154508,
+          "paired_bootstrap95": [
+            0.2638078752462314,
+            0.3220046273720208
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.003449353971518576,
+              "p95": 0.004325523308943957
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003006667,
+              "p95": 0.0033229023
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.003449353971518576,
+              "p95": 0.004325523308943957
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003006667,
+              "p95": 0.0033229023
+            }
+          },
+          "rust_speed_ratio": 1.1983281740111968,
+          "paired_bootstrap95": [
+            1.1555387609943122,
+            1.2427020720563067
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1326.8008998358318,
+              "p95": 1466.7630873022365
+            },
+            "rust": {
+              "samples": 8,
+              "median": 297.53331386328034,
+              "p95": 323.05969438160326
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1326.8008998358318,
+              "p95": 1466.7630873022365
+            },
+            "rust": {
+              "samples": 8,
+              "median": 297.53331386328034,
+              "p95": 323.05969438160326
+            }
+          },
+          "rust_speed_ratio": 0.2254359414338587,
+          "paired_bootstrap95": [
+            0.2105328260396364,
+            0.24205712877486915
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 90.01828933513215,
+              "p95": 107.40952667963693
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.31352733565791,
+              "p95": 71.76065959557397
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 90.01828933513215,
+              "p95": 107.40952667963693
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.31352733565791,
+              "p95": 71.76065959557397
+            }
+          },
+          "rust_speed_ratio": 0.7230502758831006,
+          "paired_bootstrap95": [
+            0.6732916484531313,
+            0.7975017950880884
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.39150958287063986,
+              "p95": 0.4377485105767846
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.7271962705,
+              "p95": 1.8238967853
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.39150958287063986,
+              "p95": 0.4377485105767846
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.7271962705,
+              "p95": 1.8238967853
+            }
+          },
+          "rust_speed_ratio": 0.22758343913924375,
+          "paired_bootstrap95": [
+            0.2128070763638104,
+            0.24436337353846826
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0035465415567159653,
+              "p95": 0.00566660794429481
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0030304165,
+              "p95": 0.0034423750999999997
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0035465415567159653,
+              "p95": 0.00566660794429481
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0030304165,
+              "p95": 0.0034423750999999997
+            }
+          },
+          "rust_speed_ratio": 1.2877786013310035,
+          "paired_bootstrap95": [
+            1.088447415600312,
+            1.5236140049369236
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p2048-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1335.4670393881256,
+              "p95": 1378.718474259793
+            },
+            "rust": {
+              "samples": 8,
+              "median": 219.1718791759772,
+              "p95": 230.49815145557457
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1335.4670393881256,
+              "p95": 1378.718474259793
+            },
+            "rust": {
+              "samples": 8,
+              "median": 219.1718791759772,
+              "p95": 230.49815145557457
+            }
+          },
+          "rust_speed_ratio": 0.1639264024094947,
+          "paired_bootstrap95": [
+            0.14942849987172768,
+            0.17752668732032373
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 88.94502653631345,
+              "p95": 95.93694980646227
+            },
+            "rust": {
+              "samples": 8,
+              "median": 56.461783157786456,
+              "p95": 61.69479734921485
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 88.94502653631345,
+              "p95": 95.93694980646227
+            },
+            "rust": {
+              "samples": 8,
+              "median": 56.461783157786456,
+              "p95": 61.69479734921485
+            }
+          },
+          "rust_speed_ratio": 0.640721241756266,
+          "paired_bootstrap95": [
+            0.5812464877654091,
+            0.717073702055235
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.5370086460607126,
+              "p95": 1.666440266452264
+            },
+            "rust": {
+              "samples": 8,
+              "median": 9.355045166500002,
+              "p95": 10.588471814350001
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.5370086460607126,
+              "p95": 1.666440266452264
+            },
+            "rust": {
+              "samples": 8,
+              "median": 9.355045166500002,
+              "p95": 10.588471814350001
+            }
+          },
+          "rust_speed_ratio": 0.16413882483105044,
+          "paired_bootstrap95": [
+            0.14960607296644887,
+            0.17783371311763177
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.003437333507463336,
+              "p95": 0.003968854004051536
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003191854,
+              "p95": 0.0033548625000000003
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.003437333507463336,
+              "p95": 0.003968854004051536
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003191854,
+              "p95": 0.0033548625000000003
+            }
+          },
+          "rust_speed_ratio": 1.1121687027018365,
+          "paired_bootstrap95": [
+            1.062426198057064,
+            1.1765221731238151
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "native",
+      "workload": "prose-p128-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1422.2499605295611,
+              "p95": 1504.6536210227173
+            },
+            "rust": {
+              "samples": 8,
+              "median": 299.1972867021697,
+              "p95": 310.63333315471425
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1422.2499605295611,
+              "p95": 1504.6536210227173
+            },
+            "rust": {
+              "samples": 8,
+              "median": 299.1972867021697,
+              "p95": 310.63333315471425
+            }
+          },
+          "rust_speed_ratio": 0.20969323988563668,
+          "paired_bootstrap95": [
+            0.2040444812008548,
+            0.21517127477440887
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 112.33821684438391,
+              "p95": 117.39972460059337
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.7019049044822,
+              "p95": 69.34943464606783
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 112.33821684438391,
+              "p95": 117.39972460059337
+            },
+            "rust": {
+              "samples": 8,
+              "median": 67.7019049044822,
+              "p95": 69.34943464606783
+            }
+          },
+          "rust_speed_ratio": 0.6001668510985887,
+          "paired_bootstrap95": [
+            0.5708954789641214,
+            0.6191948238927748
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.09194914647378027,
+              "p95": 0.0950387105694972
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.431207625,
+              "p95": 0.44367143365
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.09194914647378027,
+              "p95": 0.0950387105694972
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.431207625,
+              "p95": 0.44367143365
+            }
+          },
+          "rust_speed_ratio": 0.21282740358641872,
+          "paired_bootstrap95": [
+            0.2070941124071919,
+            0.21871941790539945
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001950458507053554,
+              "p95": 0.0027489745290949935
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003370271,
+              "p95": 0.00351912105
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001950458507053554,
+              "p95": 0.0027489745290949935
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003370271,
+              "p95": 0.00351912105
+            }
+          },
+          "rust_speed_ratio": 0.6271230070110332,
+          "paired_bootstrap95": [
+            0.5642960995428967,
+            0.7151869563513193
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "native",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1612.0484368199604,
+              "p95": 1697.927619986047
+            },
+            "rust": {
+              "samples": 8,
+              "median": 279.30611414454887,
+              "p95": 285.1225800337198
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1612.0484368199604,
+              "p95": 1697.927619986047
+            },
+            "rust": {
+              "samples": 8,
+              "median": 279.30611414454887,
+              "p95": 285.1225800337198
+            }
+          },
+          "rust_speed_ratio": 0.17092835537971554,
+          "paired_bootstrap95": [
+            0.1662834081297827,
+            0.17570305420978086
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 110.04788844983113,
+              "p95": 116.49460274000431
+            },
+            "rust": {
+              "samples": 8,
+              "median": 65.36954750658397,
+              "p95": 67.66188859185061
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 110.04788844983113,
+              "p95": 116.49460274000431
+            },
+            "rust": {
+              "samples": 8,
+              "median": 65.36954750658397,
+              "p95": 67.66188859185061
+            }
+          },
+          "rust_speed_ratio": 0.5902700620375799,
+          "paired_bootstrap95": [
+            0.5669789807923262,
+            0.6101813942829688
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.3200033955508843,
+              "p95": 0.3330285624368116
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.8365752084999998,
+              "p95": 1.8935310296999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.3200033955508843,
+              "p95": 0.3330285624368116
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.8365752084999998,
+              "p95": 1.8935310296999999
+            }
+          },
+          "rust_speed_ratio": 0.17175776796227737,
+          "paired_bootstrap95": [
+            0.16703144421683808,
+            0.17661782782100624
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0019071249989792705,
+              "p95": 0.0026009561610408124
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003333313,
+              "p95": 0.00361450625
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0019071249989792705,
+              "p95": 0.0026009561610408124
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.003333313,
+              "p95": 0.00361450625
+            }
+          },
+          "rust_speed_ratio": 0.6209485314407805,
+          "paired_bootstrap95": [
+            0.5662215706878105,
+            0.6754704827733908
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "llama32-1b-4bit",
+      "track": "native",
+      "workload": "prose-p2048-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1603.9343410534063,
+              "p95": 1656.0896394311137
+            },
+            "rust": {
+              "samples": 8,
+              "median": 205.87312652984917,
+              "p95": 206.40860620432647
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1603.9343410534063,
+              "p95": 1656.0896394311137
+            },
+            "rust": {
+              "samples": 8,
+              "median": 205.87312652984917,
+              "p95": 206.40860620432647
+            }
+          },
+          "rust_speed_ratio": 0.1271989705250211,
+          "paired_bootstrap95": [
+            0.12480279506984647,
+            0.13000493833545482
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 102.6848796748817,
+              "p95": 108.2042842919739
+            },
+            "rust": {
+              "samples": 8,
+              "median": 55.498018563573424,
+              "p95": 57.958269297352665
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 102.6848796748817,
+              "p95": 108.2042842919739
+            },
+            "rust": {
+              "samples": 8,
+              "median": 55.498018563573424,
+              "p95": 57.958269297352665
+            }
+          },
+          "rust_speed_ratio": 0.5439631306757633,
+          "paired_bootstrap95": [
+            0.5357147548322381,
+            0.550541726768211
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.2787803539540619,
+              "p95": 1.336958082858473
+            },
+            "rust": {
+              "samples": 8,
+              "median": 9.951199062499999,
+              "p95": 10.697379931599999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.2787803539540619,
+              "p95": 1.336958082858473
+            },
+            "rust": {
+              "samples": 8,
+              "median": 9.951199062499999,
+              "p95": 10.697379931599999
+            }
+          },
+          "rust_speed_ratio": 0.1272937385151086,
+          "paired_bootstrap95": [
+            0.12478678093969506,
+            0.13024491163766905
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001878770417533815,
+              "p95": 0.002000441448763013
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0032695835,
+              "p95": 0.0035419897
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001878770417533815,
+              "p95": 0.002000441448763013
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0032695835,
+              "p95": 0.0035419897
+            }
+          },
+          "rust_speed_ratio": 0.5857817717264259,
+          "paired_bootstrap95": [
+            0.5693835709165059,
+            0.6069304137163289
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-8bit",
+      "track": "matched_f32",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1942.4556500577246,
+              "p95": 1990.0271226865711
+            },
+            "rust": {
+              "samples": 8,
+              "median": 463.1892888908985,
+              "p95": 471.97467337401076
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1942.4556500577246,
+              "p95": 1990.0271226865711
+            },
+            "rust": {
+              "samples": 8,
+              "median": 463.1892888908985,
+              "p95": 471.97467337401076
+            }
+          },
+          "rust_speed_ratio": 0.23969291511100463,
+          "paired_bootstrap95": [
+            0.23465519231598597,
+            0.24478985815248727
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 82.46776291577413,
+              "p95": 86.19190421922531
+            },
+            "rust": {
+              "samples": 8,
+              "median": 58.35738914873386,
+              "p95": 59.378520675701154
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 82.46776291577413,
+              "p95": 86.19190421922531
+            },
+            "rust": {
+              "samples": 8,
+              "median": 58.35738914873386,
+              "p95": 59.378520675701154
+            }
+          },
+          "rust_speed_ratio": 0.7081031009927634,
+          "paired_bootstrap95": [
+            0.68692004557294,
+            0.7302917885650648
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.2653469784418121,
+              "p95": 0.27971048302715645
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.1067345620000002,
+              "p95": 1.1445128024
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.2653469784418121,
+              "p95": 0.27971048302715645
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.1067345620000002,
+              "p95": 1.1445128024
+            }
+          },
+          "rust_speed_ratio": 0.24106867134219634,
+          "paired_bootstrap95": [
+            0.236057083520679,
+            0.24614502429796747
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018304584082216024,
+              "p95": 0.002100912551395595
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012784580000000001,
+              "p95": 0.00139704955
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0018304584082216024,
+              "p95": 0.002100912551395595
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012784580000000001,
+              "p95": 0.00139704955
+            }
+          },
+          "rust_speed_ratio": 1.4790570293871332,
+          "paired_bootstrap95": [
+            1.3928665363529196,
+            1.570580984670309
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-8bit",
+      "track": "native",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2459.7721379689315,
+              "p95": 2533.6403687015822
+            },
+            "rust": {
+              "samples": 8,
+              "median": 459.449344908634,
+              "p95": 468.521825363661
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2459.7721379689315,
+              "p95": 2533.6403687015822
+            },
+            "rust": {
+              "samples": 8,
+              "median": 459.449344908634,
+              "p95": 468.521825363661
+            }
+          },
+          "rust_speed_ratio": 0.18827758339095757,
+          "paired_bootstrap95": [
+            0.18323086592971738,
+            0.19445738394837456
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 85.81520053469498,
+              "p95": 91.40769110700055
+            },
+            "rust": {
+              "samples": 8,
+              "median": 59.19678691246089,
+              "p95": 60.2739935552753
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 85.81520053469498,
+              "p95": 91.40769110700055
+            },
+            "rust": {
+              "samples": 8,
+              "median": 59.19678691246089,
+              "p95": 60.2739935552753
+            }
+          },
+          "rust_speed_ratio": 0.6805229743770075,
+          "paired_bootstrap95": [
+            0.6684874751709894,
+            0.6921461066516478
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.20941787457559258,
+              "p95": 0.22094388108234853
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.1157652915,
+              "p95": 1.1305478204000001
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.20941787457559258,
+              "p95": 0.22094388108234853
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.1157652915,
+              "p95": 1.1305478204000001
+            }
+          },
+          "rust_speed_ratio": 0.18929343598068182,
+          "paired_bootstrap95": [
+            0.1842359221867849,
+            0.19530631999816697
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0011994375381618738,
+              "p95": 0.001858485164120793
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012937705,
+              "p95": 0.00161391435
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0011994375381618738,
+              "p95": 0.001858485164120793
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012937705,
+              "p95": 0.00161391435
+            }
+          },
+          "rust_speed_ratio": 0.9943878099842703,
+          "paired_bootstrap95": [
+            0.8868073144613609,
+            1.1132459538295987
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-bf16",
+      "track": "matched_f32",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1778.4753991412729,
+              "p95": 1834.3421851065289
+            },
+            "rust": {
+              "samples": 8,
+              "median": 403.1421382828046,
+              "p95": 407.9930295769174
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 6,
+              "median": 1778.4753991412729,
+              "p95": 1824.5790714141613
+            },
+            "rust": {
+              "samples": 6,
+              "median": 405.9662950349575,
+              "p95": 408.00553854841144
+            }
+          },
+          "rust_speed_ratio": 0.22639979533695426,
+          "paired_bootstrap95": [
+            0.22557039844729104,
+            0.22705533641638173
+          ],
+          "valid_paired_blocks": 3,
+          "confounded_blocks": [
+            0
+          ]
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 27.071273952657357,
+              "p95": 27.919037007991957
+            },
+            "rust": {
+              "samples": 8,
+              "median": 24.80059045617883,
+              "p95": 25.352052631854644
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 6,
+              "median": 27.071273952657357,
+              "p95": 27.418225765893812
+            },
+            "rust": {
+              "samples": 6,
+              "median": 25.035750640268816,
+              "p95": 25.3529797957352
+            }
+          },
+          "rust_speed_ratio": 0.9172948609501008,
+          "paired_bootstrap95": [
+            0.9062343542784282,
+            0.928696206618732
+          ],
+          "valid_paired_blocks": 3,
+          "confounded_blocks": [
+            0
+          ]
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.28967220860067755,
+              "p95": 0.2933202772284858
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.271129792,
+              "p95": 1.3107036047
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 6,
+              "median": 0.28967220860067755,
+              "p95": 0.2934012814075686
+            },
+            "rust": {
+              "samples": 6,
+              "median": 1.2623418745000001,
+              "p95": 1.29320846875
+            }
+          },
+          "rust_speed_ratio": 0.2277992633515425,
+          "paired_bootstrap95": [
+            0.2266783588627892,
+            0.2284244496845398
+          ],
+          "valid_paired_blocks": 3,
+          "confounded_blocks": [
+            0
+          ]
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.001798104029148817,
+              "p95": 0.0027760436758399003
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0011525415,
+              "p95": 0.0014887229
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 6,
+              "median": 0.001798104029148817,
+              "p95": 0.0029222811572253704
+            },
+            "rust": {
+              "samples": 6,
+              "median": 0.001148854,
+              "p95": 0.001437114
+            }
+          },
+          "rust_speed_ratio": 1.6595459488738111,
+          "paired_bootstrap95": [
+            1.397569277938222,
+            1.9749593798843055
+          ],
+          "valid_paired_blocks": 3,
+          "confounded_blocks": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-bf16",
+      "track": "native",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2506.084612496617,
+              "p95": 2562.2003750541953
+            },
+            "rust": {
+              "samples": 8,
+              "median": 420.28394441880744,
+              "p95": 430.3526847842607
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2506.084612496617,
+              "p95": 2562.2003750541953
+            },
+            "rust": {
+              "samples": 8,
+              "median": 420.28394441880744,
+              "p95": 430.3526847842607
+            }
+          },
+          "rust_speed_ratio": 0.16678035002017125,
+          "paired_bootstrap95": [
+            0.16548834895172213,
+            0.1680824380027231
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 50.62855005890995,
+              "p95": 51.793016245669946
+            },
+            "rust": {
+              "samples": 8,
+              "median": 34.89318261179198,
+              "p95": 35.563366644410316
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 50.62855005890995,
+              "p95": 51.793016245669946
+            },
+            "rust": {
+              "samples": 8,
+              "median": 34.89318261179198,
+              "p95": 35.563366644410316
+            }
+          },
+          "rust_speed_ratio": 0.6912640767899012,
+          "paired_bootstrap95": [
+            0.6800697457671703,
+            0.7066254723652597
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.20543858304154128,
+              "p95": 0.20674133349675686
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.219456938,
+              "p95": 1.2724356318
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.20543858304154128,
+              "p95": 0.20674133349675686
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.219456938,
+              "p95": 1.2724356318
+            }
+          },
+          "rust_speed_ratio": 0.1674947848904589,
+          "paired_bootstrap95": [
+            0.16616039068179736,
+            0.168839895298672
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0011775828897953033,
+              "p95": 0.0012599920970387756
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012977295,
+              "p95": 0.0016023896999999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0011775828897953033,
+              "p95": 0.0012599920970387756
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0012977295,
+              "p95": 0.0016023896999999999
+            }
+          },
+          "rust_speed_ratio": 0.8956574886189983,
+          "paired_bootstrap95": [
+            0.8356502811284781,
+            0.9677888427890592
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-4b-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 332.94451625362984,
+              "p95": 343.07876390916596
+            },
+            "rust": {
+              "samples": 8,
+              "median": 96.02849333367126,
+              "p95": 96.49378018365405
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 332.94451625362984,
+              "p95": 343.07876390916596
+            },
+            "rust": {
+              "samples": 8,
+              "median": 96.02849333367126,
+              "p95": 96.49378018365405
+            }
+          },
+          "rust_speed_ratio": 0.29745633191907744,
+          "paired_bootstrap95": [
+            0.2797902606887467,
+            0.32130689833862613
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 29.33298354057775,
+              "p95": 30.230745166736106
+            },
+            "rust": {
+              "samples": 8,
+              "median": 23.145390387457322,
+              "p95": 23.224487911552842
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 29.33298354057775,
+              "p95": 30.230745166736106
+            },
+            "rust": {
+              "samples": 8,
+              "median": 23.145390387457322,
+              "p95": 23.224487911552842
+            }
+          },
+          "rust_speed_ratio": 0.8244128893890367,
+          "paired_bootstrap95": [
+            0.775178522697751,
+            0.8786786958968448
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.542114645941183,
+              "p95": 1.7905294622527435
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.335391166500001,
+              "p95": 5.55188031735
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.542114645941183,
+              "p95": 1.7905294622527435
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.335391166500001,
+              "p95": 5.55188031735
+            }
+          },
+          "rust_speed_ratio": 0.2984868747674933,
+          "paired_bootstrap95": [
+            0.280846833880038,
+            0.32195359993755146
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.004640333470888436,
+              "p95": 0.006533860322088002
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0037119585,
+              "p95": 0.004562964599999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.004640333470888436,
+              "p95": 0.006533860322088002
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0037119585,
+              "p95": 0.004562964599999999
+            }
+          },
+          "rust_speed_ratio": 1.2866592010075724,
+          "paired_bootstrap95": [
+            1.1105125174121853,
+            1.463595581093002
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-4b-4bit",
+      "track": "native",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 427.5919808007959,
+              "p95": 432.08367874139645
+            },
+            "rust": {
+              "samples": 8,
+              "median": 95.64923112281917,
+              "p95": 97.15969994117349
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 427.5919808007959,
+              "p95": 432.08367874139645
+            },
+            "rust": {
+              "samples": 8,
+              "median": 95.64923112281917,
+              "p95": 97.15969994117349
+            }
+          },
+          "rust_speed_ratio": 0.21865338599241746,
+          "paired_bootstrap95": [
+            0.21447363480065898,
+            0.22344088382395771
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 34.98295199950546,
+              "p95": 35.13364981701612
+            },
+            "rust": {
+              "samples": 8,
+              "median": 23.523970285550334,
+              "p95": 23.633692503499727
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 34.98295199950546,
+              "p95": 35.13364981701612
+            },
+            "rust": {
+              "samples": 8,
+              "median": 23.523970285550334,
+              "p95": 23.633692503499727
+            }
+          },
+          "rust_speed_ratio": 0.6447222237470109,
+          "paired_bootstrap95": [
+            0.6149208150018002,
+            0.6759679224585592
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.200077791349031,
+              "p95": 1.2084224853781051
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.3577117295,
+              "p95": 5.926078929299999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1.200077791349031,
+              "p95": 1.2084224853781051
+            },
+            "rust": {
+              "samples": 8,
+              "median": 5.3577117295,
+              "p95": 5.926078929299999
+            }
+          },
+          "rust_speed_ratio": 0.21868474232850457,
+          "paired_bootstrap95": [
+            0.21427982936322335,
+            0.22374180061745588
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002675584051758051,
+              "p95": 0.00313862090697512
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0040873125,
+              "p95": 0.0043627171
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002675584051758051,
+              "p95": 0.00313862090697512
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0040873125,
+              "p95": 0.0043627171
+            }
+          },
+          "rust_speed_ratio": 0.6932536212446464,
+          "paired_bootstrap95": [
+            0.6728557980088434,
+            0.7079837316737865
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "code-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1617.0109524191037,
+              "p95": 1645.747786170233
+            },
+            "rust": {
+              "samples": 8,
+              "median": 364.01010838718804,
+              "p95": 381.8992896779988
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1617.0109524191037,
+              "p95": 1645.747786170233
+            },
+            "rust": {
+              "samples": 8,
+              "median": 364.01010838718804,
+              "p95": 381.8992896779988
+            }
+          },
+          "rust_speed_ratio": 0.22907095235261846,
+          "paired_bootstrap95": [
+            0.21890362000119384,
+            0.2468401417764766
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 89.37757268309144,
+              "p95": 96.0668169316616
+            },
+            "rust": {
+              "samples": 8,
+              "median": 62.04113819723962,
+              "p95": 65.60028253769892
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 89.37757268309144,
+              "p95": 96.0668169316616
+            },
+            "rust": {
+              "samples": 8,
+              "median": 62.04113819723962,
+              "p95": 65.60028253769892
+            }
+          },
+          "rust_speed_ratio": 0.7204550899315258,
+          "paired_bootstrap95": [
+            0.6393491567462585,
+            0.861931354606767
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.3190730835776776,
+              "p95": 0.37151054384885357
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.4085074995,
+              "p95": 1.5743680266499998
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.3190730835776776,
+              "p95": 0.37151054384885357
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.4085074995,
+              "p95": 1.5743680266499998
+            }
+          },
+          "rust_speed_ratio": 0.23099485047687762,
+          "paired_bootstrap95": [
+            0.22059844125976205,
+            0.2496368134498178
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002357937511987984,
+              "p95": 0.0027235041954554616
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001446729,
+              "p95": 0.00185471435
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002357937511987984,
+              "p95": 0.0027235041954554616
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001446729,
+              "p95": 0.00185471435
+            }
+          },
+          "rust_speed_ratio": 1.5508790022816532,
+          "paired_bootstrap95": [
+            1.4948398529823752,
+            1.634895052424801
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "russian-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1581.4830222154887,
+              "p95": 1608.850160483682
+            },
+            "rust": {
+              "samples": 8,
+              "median": 366.9575430686257,
+              "p95": 380.9069550948062
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 1581.4830222154887,
+              "p95": 1608.850160483682
+            },
+            "rust": {
+              "samples": 8,
+              "median": 366.9575430686257,
+              "p95": 380.9069550948062
+            }
+          },
+          "rust_speed_ratio": 0.2357328777560048,
+          "paired_bootstrap95": [
+            0.21211100595174104,
+            0.26470101619191255
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 90.990357915756,
+              "p95": 97.92977429556299
+            },
+            "rust": {
+              "samples": 8,
+              "median": 62.86271741619838,
+              "p95": 65.1739129203128
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 90.990357915756,
+              "p95": 97.92977429556299
+            },
+            "rust": {
+              "samples": 8,
+              "median": 62.86271741619838,
+              "p95": 65.1739129203128
+            }
+          },
+          "rust_speed_ratio": 0.6775775617684497,
+          "paired_bootstrap95": [
+            0.618447438448892,
+            0.7346810648987429
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.32574935466982424,
+              "p95": 0.39681363311829043
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.3972427915,
+              "p95": 1.58185207095
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.32574935466982424,
+              "p95": 0.39681363311829043
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.3972427915,
+              "p95": 1.58185207095
+            }
+          },
+          "rust_speed_ratio": 0.2384514734299881,
+          "paired_bootstrap95": [
+            0.21343253804702508,
+            0.27052409207413486
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002328312024474144,
+              "p95": 0.008470581378787752
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001428333,
+              "p95": 0.0018876999999999998
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.002328312024474144,
+              "p95": 0.008470581378787752
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.001428333,
+              "p95": 0.0018876999999999998
+            }
+          },
+          "rust_speed_ratio": 2.028833806355925,
+          "paired_bootstrap95": [
+            1.3420641533790096,
+            3.9713022843311028
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "native",
+      "workload": "code-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2255.9177465193325,
+              "p95": 2415.266222482943
+            },
+            "rust": {
+              "samples": 8,
+              "median": 435.2207139963115,
+              "p95": 465.35389343969365
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2255.9177465193325,
+              "p95": 2415.266222482943
+            },
+            "rust": {
+              "samples": 8,
+              "median": 435.2207139963115,
+              "p95": 465.35389343969365
+            }
+          },
+          "rust_speed_ratio": 0.17986451700743522,
+          "paired_bootstrap95": [
+            0.16679025675150477,
+            0.19299447912446616
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 107.94462773997137,
+              "p95": 128.57852571314797
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.04343730542661,
+              "p95": 77.52998365081416
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 107.94462773997137,
+              "p95": 128.57852571314797
+            },
+            "rust": {
+              "samples": 8,
+              "median": 69.04343730542661,
+              "p95": 77.52998365081416
+            }
+          },
+          "rust_speed_ratio": 0.6004705910592404,
+          "paired_bootstrap95": [
+            0.5869557162228319,
+            0.6168392248183946
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.22902525099925697,
+              "p95": 0.2645048472797498
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.181744812,
+              "p95": 1.6505419211499999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.22902525099925697,
+              "p95": 0.2645048472797498
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.181744812,
+              "p95": 1.6505419211499999
+            }
+          },
+          "rust_speed_ratio": 0.17990710648192393,
+          "paired_bootstrap95": [
+            0.16692967360606914,
+            0.19389342987082653
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0013128954451531172,
+              "p95": 0.0019341623177751897
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0014550835,
+              "p95": 0.0017629562499999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0013128954451531172,
+              "p95": 0.0019341623177751897
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0014550835,
+              "p95": 0.0017629562499999999
+            }
+          },
+          "rust_speed_ratio": 0.9739703613856506,
+          "paired_bootstrap95": [
+            0.8969149086883089,
+            1.0628449828742026
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "native",
+      "workload": "russian-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2221.0070518070424,
+              "p95": 2390.1387195648526
+            },
+            "rust": {
+              "samples": 8,
+              "median": 404.5360592570479,
+              "p95": 463.6136948588061
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 2221.0070518070424,
+              "p95": 2390.1387195648526
+            },
+            "rust": {
+              "samples": 8,
+              "median": 404.5360592570479,
+              "p95": 463.6136948588061
+            }
+          },
+          "rust_speed_ratio": 0.18275038024240275,
+          "paired_bootstrap95": [
+            0.17143395874103506,
+            0.193433411799359
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 109.712753031824,
+              "p95": 128.3501902000233
+            },
+            "rust": {
+              "samples": 8,
+              "median": 64.28867552040433,
+              "p95": 74.98100816715511
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 109.712753031824,
+              "p95": 128.3501902000233
+            },
+            "rust": {
+              "samples": 8,
+              "median": 64.28867552040433,
+              "p95": 74.98100816715511
+            }
+          },
+          "rust_speed_ratio": 0.5929685215810637,
+          "paired_bootstrap95": [
+            0.5658523040422806,
+            0.6287893945664047
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.23282122961245477,
+              "p95": 0.26822208481607956
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.267831937,
+              "p95": 1.490084266
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.23282122961245477,
+              "p95": 0.26822208481607956
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.267831937,
+              "p95": 1.490084266
+            }
+          },
+          "rust_speed_ratio": 0.18348316723809405,
+          "paired_bootstrap95": [
+            0.1722183020106759,
+            0.19405915765238366
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0016014993889257312,
+              "p95": 0.0019133266992866992
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0014866245,
+              "p95": 0.0020975415499999996
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 8,
+              "median": 0.0016014993889257312,
+              "p95": 0.0019133266992866992
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0014866245,
+              "p95": 0.0020975415499999996
+            }
+          },
+          "rust_speed_ratio": 1.0081307262507273,
+          "paired_bootstrap95": [
+            0.8860974066517404,
+            1.195883446701311
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "qwen35-08-4bit",
+      "track": "matched_f32",
+      "workload": "prose-p512-d512",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 1722.1989136256652,
+              "p95": 1738.1837018442532
+            },
+            "rust": {
+              "samples": 4,
+              "median": 431.87466693342463,
+              "p95": 435.8056112543262
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 1722.1989136256652,
+              "p95": 1738.1837018442532
+            },
+            "rust": {
+              "samples": 4,
+              "median": 431.87466693342463,
+              "p95": 435.8056112543262
+            }
+          },
+          "rust_speed_ratio": 0.24837849374097193,
+          "paired_bootstrap95": [
+            0.24666897591384626,
+            0.25009985923232225
+          ],
+          "valid_paired_blocks": 2,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 106.55381555656571,
+              "p95": 108.62475441960206
+            },
+            "rust": {
+              "samples": 4,
+              "median": 67.8659777922342,
+              "p95": 68.45538770374993
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 106.55381555656571,
+              "p95": 108.62475441960206
+            },
+            "rust": {
+              "samples": 4,
+              "median": 67.8659777922342,
+              "p95": 68.45538770374993
+            }
+          },
+          "rust_speed_ratio": 0.6315297825274069,
+          "paired_bootstrap95": [
+            0.6289549791041201,
+            0.6341151266298978
+          ],
+          "valid_paired_blocks": 2,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 0.2998393754241988,
+              "p95": 0.30573246426647527
+            },
+            "rust": {
+              "samples": 4,
+              "median": 1.1884003745,
+              "p95": 1.2526285848499998
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 0.2998393754241988,
+              "p95": 0.30573246426647527
+            },
+            "rust": {
+              "samples": 4,
+              "median": 1.1884003745,
+              "p95": 1.2526285848499998
+            }
+          },
+          "rust_speed_ratio": 0.24968347876507954,
+          "paired_bootstrap95": [
+            0.24773285657066224,
+            0.25164945995142884
+          ],
+          "valid_paired_blocks": 2,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 0.0021624789806082845,
+              "p95": 0.003166414191946387
+            },
+            "rust": {
+              "samples": 4,
+              "median": 0.002244229,
+              "p95": 0.004086728499999999
+            }
+          },
+          "valid_paired_engines": {
+            "mlx": {
+              "samples": 4,
+              "median": 0.0021624789806082845,
+              "p95": 0.003166414191946387
+            },
+            "rust": {
+              "samples": 4,
+              "median": 0.002244229,
+              "p95": 0.004086728499999999
+            }
+          },
+          "rust_speed_ratio": 0.9415802473876386,
+          "paired_bootstrap95": [
+            0.8940556879804595,
+            0.9916310294644014
+          ],
+          "valid_paired_blocks": 2,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "stories260K",
+      "track": "gguf",
+      "workload": "prose-p128-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 112443.31611823563,
+              "p95": 120095.40649431924
+            },
+            "rust": {
+              "samples": 8,
+              "median": 34130.49396017316,
+              "p95": 38471.20214207662
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 112443.31611823563,
+              "p95": 120095.40649431924
+            },
+            "rust": {
+              "samples": 8,
+              "median": 34130.49396017316,
+              "p95": 38471.20214207662
+            }
+          },
+          "rust_speed_ratio": 0.30839079615823184,
+          "paired_bootstrap95": [
+            0.28499492026752576,
+            0.33493565186459306
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1849.418933791167,
+              "p95": 1899.1632134652766
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1317.1577566251644,
+              "p95": 1427.337189541899
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1849.418933791167,
+              "p95": 1899.1632134652766
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1317.1577566251644,
+              "p95": 1427.337189541899
+            }
+          },
+          "rust_speed_ratio": 0.7270474525595867,
+          "paired_bootstrap95": [
+            0.7142613312549094,
+            0.7397239201914599
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 0.0011575625000000002,
+              "p95": 0.0019137278499999995
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0037608545,
+              "p95": 0.0048984308999999995
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 0.0011575625000000002,
+              "p95": 0.0019137278499999995
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0037608545,
+              "p95": 0.0048984308999999995
+            }
+          },
+          "rust_speed_ratio": 0.3206961775083376,
+          "paired_bootstrap95": [
+            0.29122844937892234,
+            0.3531455751929113
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1.85415e-05,
+              "p95": 1.954595e-05
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.0478999999999999e-05,
+              "p95": 1.2182899999999998e-05
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1.85415e-05,
+              "p95": 1.954595e-05
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.0478999999999999e-05,
+              "p95": 1.2182899999999998e-05
+            }
+          },
+          "rust_speed_ratio": 1.7175025711992116,
+          "paired_bootstrap95": [
+            1.6392793098707235,
+            1.8100971575948361
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    },
+    {
+      "model": "stories260K",
+      "track": "gguf",
+      "workload": "prose-p512-d64",
+      "metrics": {
+        "prefill_tokens_per_second": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 104782.43267194032,
+              "p95": 122725.10122552869
+            },
+            "rust": {
+              "samples": 8,
+              "median": 20798.10604555771,
+              "p95": 21691.516999364023
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 104782.43267194032,
+              "p95": 122725.10122552869
+            },
+            "rust": {
+              "samples": 8,
+              "median": 20798.10604555771,
+              "p95": 21691.516999364023
+            }
+          },
+          "rust_speed_ratio": 0.19881261500700542,
+          "paired_bootstrap95": [
+            0.17407055199825852,
+            0.2270714686210635
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "decode_tokens_per_second": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1713.6088456786297,
+              "p95": 1753.4741550930046
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1166.8393716611536,
+              "p95": 1197.013497271987
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 1713.6088456786297,
+              "p95": 1753.4741550930046
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1166.8393716611536,
+              "p95": 1197.013497271987
+            }
+          },
+          "rust_speed_ratio": 0.686241540675179,
+          "paired_bootstrap95": [
+            0.6671957223977492,
+            0.7047966772354072
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "request_ttft_seconds": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 0.0049868329999999995,
+              "p95": 0.0056251999999999995
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0246384165,
+              "p95": 0.02514484585
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 0.0049868329999999995,
+              "p95": 0.0056251999999999995
+            },
+            "rust": {
+              "samples": 8,
+              "median": 0.0246384165,
+              "p95": 0.02514484585
+            }
+          },
+          "rust_speed_ratio": 0.19967039000144896,
+          "paired_bootstrap95": [
+            0.17491743658521663,
+            0.22792618861589384
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        },
+        "reset_seconds": {
+          "engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 2.5333e-05,
+              "p95": 2.665625e-05
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.2063e-05,
+              "p95": 2.8431249999999997e-05
+            }
+          },
+          "valid_paired_engines": {
+            "llama.cpp": {
+              "samples": 8,
+              "median": 2.5333e-05,
+              "p95": 2.665625e-05
+            },
+            "rust": {
+              "samples": 8,
+              "median": 1.2063e-05,
+              "p95": 2.8431249999999997e-05
+            }
+          },
+          "rust_speed_ratio": 1.6415508586186238,
+          "paired_bootstrap95": [
+            1.1775525757049776,
+            2.2557284983574464
+          ],
+          "valid_paired_blocks": 4,
+          "confounded_blocks": []
+        }
+      }
+    }
+  ]
+}
